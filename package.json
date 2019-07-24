@@ -1,0 +1,30 @@
+{
+  "name": "mernstack-shopinglist",
+  "version": "1.0.0",
+  "description": "shoping list built with MERN stack",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "config": "^3.1.0",
+    "create-react-app": "^3.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.0",
+    "nodemailer": "^6.2.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix shoping_list",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix shoping_list",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "",
+  "license": "ISC"
+}
